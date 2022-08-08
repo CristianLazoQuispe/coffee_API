@@ -19,6 +19,8 @@ def show_home():
    # else:
     #    return jsonify(message='Bienvenido ' + name), 200
 
+# https://project01-cristian.herokuapp.com/Other/Other/7.25/6.83/7.17/7.00/7.17/0.11
+
 @app.route('/<string:country>/<string:variety>/<float:aroma>/<float:aftertaste>/<float:acidity>/<float:body>/<float:balance>/<float:moisture>') # se dice al Flask el tipo de datos que va a recibir segun el test.py
 def result(country,variety,aroma,aftertaste,acidity,body,balance,moisture):
     cols= ['country_of_origin','variety','aroma','aftertaste','acidity','body','balance','moisture'] # cabecera de pandas
