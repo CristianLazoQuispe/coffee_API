@@ -1,1 +1,2 @@
-web: gunicorn gettingstarted.wsgi
+Procfile
+    web: gunicorn app:app
